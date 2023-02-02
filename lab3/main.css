@@ -1,0 +1,71 @@
+body{
+    background-color: rgb(212, 212, 232);
+}
+.banner {
+    background-image: url("https://wallpapercave.com/wp/wp8838698.jpg");
+    opacity: 80%;
+    height: 500px;
+    text-align: center;
+    font-size: 30px;
+    color: rgb(67, 0, 183);
+    font-weight: bold;
+    padding: 100px;
+}
+.heading { 
+    font-size: 50px;
+    font-style: italic;
+    color: purple;
+}
+#taskId { 
+    font-size: 40px;
+    font-weight: 900;
+    font-family: 'Courier New', Courier, monospace;
+}
+ul > li {
+    color: rgb(13, 123, 35);
+}
+a:link{
+    color: rgb(13, 123, 35);
+}
+a:visited{
+    color: rgb(222, 37, 102)
+}
+a:hover{
+    font-size: 20px;
+    color: rgb(152, 12, 12);
+}
+p{
+    font-size: 15px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+table{
+    color: rgb(0, 26, 66);
+    font-size: 20px;
+}
+article[id="requirements"]:hover{
+    border: 5px solid purple;
+    border-radius: 1%;
+    margin: 10px;
+    padding: 10px;
+}
+article > p {
+    font-size: 15px;
+    color: green;
+}
+.articles {
+    font-size: 25px;
+    font-style: oblique;
+    color: rgb(5, 87, 5);
+}
+img[src="planets.jpeg"] { 
+    content: url("photo_2023-02-02_20-54-45.jpg");
+    height: 300px;
+    width: 300px;
+    padding: 10px 20px;
+    position:static;
+}
+
+img[src="nature.jpeg"]{
+    content: url("5994738.jpg");
+}
