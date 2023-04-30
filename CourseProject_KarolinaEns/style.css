@@ -1,0 +1,289 @@
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Helvetica';
+}
+body{
+  background-color: #207868d1;
+  width: 100%;
+  min-height: 100vh;
+}
+.bg
+{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  
+  background: #207868d1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow:hidden;
+  padding-top: 20rem;
+}
+.bg h2
+{
+  position:relative;
+  font-size: 3rem;
+  color: white;
+  bottom: 18rem;
+}
+section img
+{
+  position: relative;
+  display: flex;
+}
+
+section
+{
+  padding: 10rem;
+}
+
+section  h2
+{
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+section p
+{
+  font-size: 1.1rem;
+  letter-spacing: 0.1rem
+}
+
+.box
+{
+  position: absolute;
+  width: 30rem;
+  height: 30rem;
+  box-sizing: border-box;
+  overflow: hidden;
+  box-shadow: 5px 5px 80px white;
+  margin: 10px 10px;
+  transition: 0.5s;
+}
+.box .imgBx
+{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+  justify-content: center;
+  display: flex;
+}
+.box .content
+{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 35%;
+  box-sizing: border-box;
+  text-align: center;
+  color: white;
+}
+.box .content h3
+{
+  margin-top: 30px;
+  font-size: 2rem;
+  font-family: 'consolas';
+  color: white;
+}
+.box .content p{
+  text-align: center;
+}
+.box:hover
+{
+  transform: translate(0 ,-3rem);
+}
+
+section {
+  margin-top:0%;
+  text-align:center;
+}
+.mainsectionheading
+{
+  color: white;
+}
+
+.card{
+  margin-top: 3rem;
+  position: relative;
+  width: 30rem;
+  height: 40rem;
+  transform-style: preserve-3d;
+  display: inline-block;
+}
+.card p 
+{
+  transform: perspective(500px) translateZ(35px);
+  width: 80%;
+
+}
+.card h2{
+  transform: perspective(500px) translateZ(35px);
+  text-align: center;
+  font-size: small;
+}
+.card .face
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 2s linear;
+  color: white;
+}
+.card .face.front.a
+  {
+    background: linear-gradient(#207868d1,rgb(48, 22, 1));
+    color: white;
+    transform: perspective(500px) rotateY(0deg);
+  }
+
+.card:hover .face.front.a
+{
+    transform: perspective(500px) rotateY(180deg);
+}
+
+.card .face.back.a
+{
+  background: linear-gradient(#207868d1,rgb(48, 22, 1));
+  transform: perspective(500px) rotateY(180deg);
+}
+.card:hover .face.back.a
+{
+  transform: perspective(500px) rotateY(360deg);
+}
+
+.card .face.front.b
+  {
+
+    background: linear-gradient(#207868d1,rgb(48, 22, 1));
+    color: white;
+    transform: perspective(500px) rotateY(0deg);
+  }
+
+.card:hover .face.front.b
+{
+    transform: perspective(500px) rotateY(180deg);
+}
+
+.card .face.back.b
+{
+  color: white;
+  background: linear-gradient(#207868d1,rgb(48, 22, 1));
+  transform: perspective(500px) rotateY(180deg);
+}
+
+.card:hover .face.back.b
+{
+  transform: perspective(500px) rotateY(360deg);
+}
+
+.pgbottom{
+  display: block;
+}
+.pgbottom h3, p, a{
+    text-align: left;
+    margin-left: 2rem;
+    color: white;
+}
+.pgbottom :hover a{
+  color:rgb(48, 22, 1) ;
+}
+footer {
+  flex-shrink: 0;
+  font-size: 0.9em;
+  padding: 10px 30px;
+  color: white;
+  text-align: center;
+}
+
+nav
+{
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left:0;
+  height: 4rem;
+  background: rgba(0, 0, 0, 0.1);
+  padding: 0 100px;
+  box-sizing: border-box;
+  z-index: 999;
+}
+nav .panel
+{
+  float: left;
+  height: 100%;
+  line-height: 4rem;
+}
+nav .panel h3
+{
+  font-size: 2rem;
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+nav ul
+{
+  float: right;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li
+{
+  list-style: none;
+}
+
+nav ul li a
+{
+  position: relative;
+  display: block;
+  height: 70px;
+  line-height: 70px;
+  box-sizing: border-box;
+  padding: 0px 1.5rem;
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  transition: 0.5s;
+  font-size: 1.3rem;
+}
+
+nav ul li a::before
+{
+  content: '';
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 0.3s;
+  z-index: -1;
+}
+
+nav ul li a:hover::before
+{
+  transform-origin: left;
+  transform: scaleX(1);
+}
+nav ul li a:hover
+{
+  color: #262626;
+}
